@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+*{margin:0; padding:0;
+    list-style: none;
+    box-sizing: border-box;}
+
+body{background-color: #ffffff;
+    color:#000000;
+    font-family: "Roboto", sans-serif;}
+
+a{text-decoration: none;
+    color:inherit;}
+
+.clearfix::after{display: block; content: ""; clear: both;}
+
+
+.wrap{width:100%;}
+
+header{height:70px;
+        background-color: #ffffff;}
+
+.burger{position:relative;
+        width:25px;
+        height:16px;
+        top:24px;
+        left:40px;
+        cursor: pointer;}
+
+.burger, .burger span{transition: all 0.4s;}
+
+.burger span{position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:2px;
+        background-color: #000000;}
+
+.burger span:nth-child(1){top:0;}
+.burger span:nth-child(2){top:50%;}
+.burger span:nth-child(3){top:100%;}
+
+.burger.active span:nth-of-type(1){
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.burger.active span:nth-of-type(2){
+    left:50%;
+    opacity: 0;
+    animation : active-menu-bar 0.8s forwards;
+}
+
+@keyframes active-menu-bar{
+    100% {
+        height:0;
+    }
+}
+
+.burger.active span:nth-of-type(3){
+    transform: translateY(-8px) rotate(45deg);
+}
+
+.logo{height:70px;
+    margin-top:-15px;
+    text-align: center;}
+
+.logo img{height:100%;
+        padding:10px;}
+
+/*----submenu----*/
+
+nav{position:absolute;
+    margin-top:70px;
+    width:20%;
+    height:700px;
+    background-color: #ffffff;
+    display: none;
+    z-index: 1;}
+
+nav > ul > li {position: relative;
+                padding-top:60px;
+                padding-left:40px;
+                font-family: "Tinos", sans-serif;
+                font-weight: 400;
+                font-size:30px;}
+
+
+.car_img{position:absolute;
+    top:0;
+    left:100%;
+    width:320px;
+    height:700px;
+    padding-top:20px;
+    background-color: #dddddd;}
+
+.car_img li{width:fit-content;
+            margin: 20px auto;}
+
+.car_img img{width:250px;}
+
+/*----media title----*/
+
+
+.title_wrap{width:100%;}
+
+.title_wrap h3{width:100%;
+            margin-top:50px;
+            text-align: center;
+            font-family: "Tinos", sans-serif;
+            font-weight: 400;
+            font-size:45px;}
+
+.title_wrap p{width:100%;
+            margin:10px 0 60px 0;
+                text-align: center;
+                font-family: "Tinos", sans-serif;
+                font-weight: 400;
+                font-size:20px;}
+
+
+/*----media content----*/
+
+.media_wrap{width:100%;
+            overflow: hidden;
+            display: flex;}
+
+.media_wrap h4{font-family: "Tinos", sans-serif;
+                font-weight: 400;
+                font-size:30px;
+                text-align: center;}
+
+.media_wrap > div:nth-child(1){width:20%;}
+
+
+
+.icons{display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        margin-top: 210px;}
+
+.icons div{padding:0 10px;}
+
+.icons img{width:35px;}
+
+
+.news_wrap{width:80%;
+            margin-bottom:40px;}
+
+.news div{margin-right: 20px;}
+
+.news img{width:100%;
+            height:300px;
+            object-fit: cover;}
+
+.news div p{margin:10px 0;
+            font-family: "Tinos", sans-serif;
+            font-weight: 400;
+            font-size:20px;}
+
+.news div span{font-size:14px;}
+
+
+
+
+
+
+/*----footer----*/
+
+footer{width:100%;
+    height:400px;
+    padding:50px;
+    color:#ffffff;
+    background-color: #000000;}
+
+
+.footer_wrap{display: flex;}
+
+.box1{Width:70%;}
+.box2{width:30%;}
+
+
+
+footer h3{font-family: "Tinos", sans-serif;
+            font-weight: 400;
+            font-size:50px;}
+
+.box1 > ul{width:50%;
+        margin-top:50px;
+        display: flex;
+        justify-content: space-between;}
+
+
+.box1 > ul > li{font-family: "Tinos", sans-serif;
+                font-weight: 400;
+                font-size:20px;}
+
+.ft_nav{font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top:20px;
+    line-height: 25px;}
+
+.box2{width:200px;
+margin-top:50px;}
+.box2 p{margin-top:15px;}
+.box2 > img{width:100%;}
