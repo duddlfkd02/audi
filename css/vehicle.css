@@ -131,8 +131,7 @@ nav > ul > li {position: relative;
 .vh_slide{width:92%;
         margin: 0 auto;
         padding-top:100px;
-        overflow: hidden;
-        visibility: hidden;}
+        overflow: hidden;}
 
 .vh_slide ul{width:200%;}
 

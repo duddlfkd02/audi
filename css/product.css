@@ -131,9 +131,12 @@ nav > ul > li {position: relative;
             justify-content: space-between;
             align-items: center;}
 
-.small_etron{width:400px;}
 
-.small_etron img{width:120%;}
+
+.small_etron{width:400px;
+                cursor: pointer;}
+
+.small_etron img{width:110%;}
 
 .car_detail li{text-align: center;
                 line-height: 30px;

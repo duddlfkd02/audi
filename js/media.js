@@ -7,6 +7,7 @@ $(document).ready(function(){
 //slick slide 속성
     $('.news').slick({
         infinite: true,
+        pauseOnHover:false,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,

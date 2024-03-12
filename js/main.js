@@ -47,22 +47,22 @@ $(document).ready(function(){
                 $('.content1').css({"visibility":"visible"});
             }
     
-            if($(document).scrollTop() > 1180){ 
+            if($(document).scrollTop() > 1184){ 
                 $('.content2').addClass("animate__fadeInUp");
                 $('.content2').css({"visibility":"visible"});
             }
     
-            if($(document).scrollTop() > 1909){ 
+            if($(document).scrollTop() > 573){ 
                 $('.content3').addClass("animate__fadeInUp");
                 $('.content3').css({"visibility":"visible"});
             }
     
-            if($(document).scrollTop() > 2873){ 
+            if($(document).scrollTop() > 1600){ 
                 $('.content4').addClass("animate__fadeInUp");
                 $('.content4').css({"visibility":"visible"});
             }
     
-            if($(document).scrollTop() > 3327){ 
+            if($(document).scrollTop() > 1890){ 
                 $('article:nth-child(2)').addClass("animate__fadeInUp");
                 $('article:nth-child(2)').css({"visibility":"visible"});
             }
@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     if(window_W <= 700){ //모바일
         $(document).on("scroll",function(){
-            if($(document).scrollTop() > 50){ 
+            if($(document).scrollTop() > 0){ 
                 $('.content1').addClass("animate__fadeInUp");
                 $('.content1').css({"visibility":"visible"});
             }
@@ -92,7 +92,7 @@ $(document).ready(function(){
                 $('.content4').css({"visibility":"visible"});
             }
     
-            if($(document).scrollTop() > 1072){ 
+            if($(document).scrollTop() > 1080){ 
                 $('article:nth-child(2)').addClass("animate__fadeInUp");
                 $('article:nth-child(2)').css({"visibility":"visible"});
             }

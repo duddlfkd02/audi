@@ -14,11 +14,6 @@ $(document).ready(function(){
 
     if(window_W > 950){//pc, 노트북
         $(document).on("scroll",function(){
-            if($(document).scrollTop() > 350){ 
-                $('.vh_slide').addClass("animate__fadeInUp");
-                $('.vh_slide').css({"visibility":"visible"});
-            }
-    
             if($(document).scrollTop() > 1409){ 
                 $('.service_wrap').addClass("animate__fadeIn");
                 $('.service_wrap').css({"visibility":"visible"});
@@ -29,12 +24,6 @@ $(document).ready(function(){
     
     if(window_W <= 950 && window_W > 700){ //태블릿
         $(document).on("scroll",function(){
-            if($(document).scrollTop() > 200){ 
-                $('.vh_slide').addClass("animate__fadeInUp");
-                $('.vh_slide').css({"visibility":"visible"});
-            }
-
-
             if($(document).scrollTop() > 814){ 
                 $('.service_wrap').addClass("animate__fadeIn");
                 $('.service_wrap').css({"visibility":"visible"});

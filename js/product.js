@@ -26,11 +26,11 @@ $(document).ready(function(){
                 $('.ov_img3').addClass("animate__fadeInUp");
                 $('.ov_img3').css({"visibility":"visible"});
             }
-            if($(document).scrollTop() > 2245){
+            if($(document).scrollTop() > 2250){
                 $('.ov_img4').addClass("animate__fadeInUp");
                 $('.ov_img4').css({"visibility":"visible"});
             }
-            if($(document).scrollTop() > 1638){
+            if($(document).scrollTop() > 3170){
                 $('.form_image').addClass("animate__slideInLeft");
                 $('.form_image').css({"visibility":"visible"});
             }
@@ -61,7 +61,7 @@ $(document).ready(function(){
                 $('.ov_img2').addClass("animate__fadeInUp");
                 $('.ov_img2').css({"visibility":"visible"});
             }
-            if($(document).scrollTop() > 1050){
+            if($(document).scrollTop() > 1170){
                 $('.ov_img3').addClass("animate__fadeInUp");
                 $('.ov_img3').css({"visibility":"visible"});
             }
