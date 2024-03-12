@@ -108,12 +108,16 @@ nav > ul > li {position: relative;
 .main{width:100%;
         height:700px;
         background-position: center;
+        background-size: cover;
         background-image: url("../images/image1/main.jpeg");
-        animation-duration: 4s;}
+        animation-duration: 4s;
+        display: flex;
+        flex-direction: row;
+        align-items: end;}
 
-.main_txt{float: right;
-        margin-right:30px;
-        margin-top:540px;}
+.main_txt{width:100%;
+        text-align: right;
+        margin-right:40px;}
 
 
 .main h2{font-family: "Tinos", sans-serif;
@@ -141,7 +145,11 @@ nav > ul > li {position: relative;
 
 /*----첫번째 section 차 종류 이미지----*/
 
-.car_wrap{column-count: 2;}
+.car_wrap{column-count: 2;
+        column-width: 48%;
+        column-gap: 4%;
+        max-width: 1920px;
+        margin:0 auto;}
 
 .car_wrap > div{break-inside: avoid;}
 
@@ -153,30 +161,34 @@ nav > ul > li {position: relative;
                     margin-top:30px;}
 
 
-.content1_img{width:550px;
+.content1_img{width:80%;
                 height:700px;
                 background-size: auto 100%;
+                background-repeat: no-repeat;
                 background-image: url("../images/image1/a7_sportback.jpeg");
                 background-position: center;}
 
-.content2_img{width:550px;
+.content2_img{width:80%;
                 height:620px;
                 background-size: auto 100%;
+                background-repeat: no-repeat;
                 background-image: url("../images/image1/rs5_sportback.jpeg");
                 background-position:center;}
 
 
-.content3_img{width:700px;
-    height:800px;
-    background-size: auto 100%;
-    background-image: url("../images/image1/a5_sportback_3.jpeg");
-    background-position-x: -600px;}
+.content3_img{width:100%;
+                height:800px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-image: url("../images/image1/a5_sportback_3.jpeg");
+                background-position-x: -600px;}
 
-.content4_img{width:700px;
-    height:500px;
-    background-size: auto 100%;
-    background-image: url("../images/image1/as_q7.jpeg");
-    background-position: center;}
+.content4_img{width:100%;
+                height:500px;
+                background-size: auto 100%;
+                background-repeat: no-repeat;
+                background-image: url("../images/image1/as_q7.jpeg");
+                background-position: center;}
 
 
 .content1{margin-top:100px;
@@ -196,13 +208,14 @@ nav > ul > li {position: relative;
 
 /*----discover----*/
 
+article:nth-child(2){visibility: hidden;}
+
 .discover_box{width:100%;
             display: flex;
             margin-top:200px;
             background-color: #dddddd;}
 
 .dis_img{width: 50%;
-        height:500px;
         padding:35px;}
 
 .dis_img img{width:100%;}
@@ -243,12 +256,8 @@ footer{width:100%;
         background-color: #000000;}
 
 
-.footer_wrap{display: flex;}
-
-.box1{Width:70%;}
-.box2{width:30%;}
-
-
+.footer_wrap{display: flex;
+                justify-content: space-between;}
 
 footer h3{font-family: "Tinos", sans-serif;
                 font-weight: 400;
@@ -270,12 +279,244 @@ footer h3{font-family: "Tinos", sans-serif;
         margin-top:20px;
         line-height: 25px;}
 
-.box2{width:200px;
-    margin-top:50px;}
+.box1{width:70%;}
+.box2{width:20%;
+        margin-top:50px;}
+
 .box2 p{margin-top:15px;}
 .box2 > img{width:100%;}
 
 
+/*====반응형====*/
+
+@media only screen and (max-width:1399px) and (min-width:950px){
+     
+        .main h2{font-size: 48px;}
+
+        .car_wrap{column-count: 2;
+                column-width: 49%;
+                column-gap: 2%;
+                max-width: 1399px;
+                margin:0 auto;}
+
+        .content1_img{height:600px;}
+
+        .content2_img{height:520px;}
+
+        .content3_img{height:600px;
+                        background-position: -480px;}
+
+        .content4_img{height:400px;}
+
+        .content3_img:hover{background-position-x: -530px;}
+
+        .bottom_txt h3{font-size:45px;}
+
+/*----footer----*/
+
+        footer h3{font-size:45px;}
+
+    
+    }/*1399-950구간 끝*/
+
+
+
+
+@media only screen and (max-width:949px) and (min-width:700px){
+
+/*----header & nav----*/    
+    
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:30%;
+                height:510px;}
+
+        nav > ul > li {font-size:24px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:200px;
+                height:510px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:180px;}
+
+
+/*----main----*/
+        .main{height:500px;}
+
+        .main_txt{margin-right:30px;
+                margin-top:380px;}
+
+        .main h2{font-size:40px;}
+
+        .main_btn{width:180px;
+                height:40px;
+                margin:15px 0;
+                line-height: 40px;}
+
+/*----car content image----*/
+        .car_wrap{column-count: initial;}
+
+        .content1, .content2, .content4{margin-top:80px;}
+
+        .content3{padding-top:80px;}
+
+        .content1_img, .content2_img{width:100%;}
+
+        .content3_img{background-position-x: -500px;}
+
+        .content3_img:hover{background-position-x: -550px;}
+
+
+/*----discover box----*/
+
+        .discover_box{margin-top:100px;}
+
+        .bottom_txt{margin-top:20px;}
+
+        .bottom_txt h3{margin:20px 0;
+                font-size:35px;}
+
+        .bottom_txt p{font-size:16px;}
+
+/*----footer----*/
+
+        footer h3{font-size:40px;}
+
+        .box1 ul {width:70%;}
+
+        .box2 p{text-align: center;
+                font-size: 10px;}
+
+
+}/*949-700구간 끝*/
+
+
+
+
+@media only screen and (max-width:699px){
+
+/*---header & nav----*/
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:50%;
+                height:500px;}
+
+        nav > ul > li {font-size:20px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:100%;
+                height:500px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:150px;}
+
+
+/*----main----*/
+
+        .main{height:200px;}
+
+        .main_txt{margin-right:30px;
+                margin-top:130px;}
+
+        .main h2{font-size:18px;}
+
+        .main_btn{width:100px;
+                height:22px;
+                margin-top:3px;
+                line-height: 22px;
+                font-size: 12px;}
+
+/*----car image----*/
+                
+        .car_wrap{column-count: initial;
+                width:100%;}
+
+        .car_wrap > div > h3{font-size:24px;
+                                margin-top:10px;}
+
+        .car_wrap > div > p{font-size:14px;}
+
+        .car_wrap > div > div{height:300px;
+                                width:100%;}
+
+        .car_wrap > div > div:hover{background-size: auto 100%;}
+        
+        .content1, .content2, .content4{margin-top:30px;}
+
+        .content3{padding-top:30px;}
+
+        .content3_img{background-position-x: -60px;}
+
+        .content3_img:hover{background-position-x: -60px;}
+
+        
+
+/*----discover box----*/
+
+        .discover_box{margin-top:20px;
+                        height: 180px;}
+
+        .dis_img{padding:10px;
+                height:100%;}
+
+        .dis_img img{object-fit: cover;
+                        width:100%;
+                        height:100%;}
+
+        .bottom_txt{margin-top:4px;}
+
+        .bottom_txt h3{font-size:24px;
+                        margin:10px 0;}
+
+        .bottom_txt p{width:150px;
+                        font-size:12px;}
+
+        .bottom_btn{width:100px;
+                height:22px;
+                margin-top:7px;
+                line-height: 22px;
+                font-size: 10px;}
+
+/*----footer----*/
+
+        footer{height:auto;
+                padding:20px;}
+
+        .footer_wrap{display:block ;}
+
+        footer h3{font-size:30px;
+                text-align: center;}
+
+        .box1 > ul {width:100%;
+                margin:0 auto;
+                margin-top:30px;}
+
+        .box1 > ul > li{font-size:16px;}
+
+        .ft_nav{font-size:12px;
+                margin-top:10px;
+                line-height: 20px;}
+        
+        .box1{width: 100%;}
+
+        .box2{display: none;}
 
 
 
@@ -283,5 +524,4 @@ footer h3{font-family: "Tinos", sans-serif;
 
 
 
-
-
+}

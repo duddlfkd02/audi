@@ -147,7 +147,7 @@ nav > ul > li {position: relative;
 
 /*----section2(etron 설명)----*/
 .ov_wrap{display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width:90%;
         margin: 0 auto;}
 
@@ -181,6 +181,7 @@ nav > ul > li {position: relative;
 .etron_txt p{font-family: "Tinos", sans-serif;
                 font-weight: 400;
                 font-size:20px;}
+
 
 .info_txt{display: flex;
         gap:5%;
@@ -237,6 +238,7 @@ nav > ul > li {position: relative;
             margin: 0 auto;
             display: flex;
             font-family: "Tinos", sans-serif;}
+
 .form_wrap h3{margin-bottom:40px;
             font-weight: 400;
             font-size:30px;}
@@ -318,3 +320,377 @@ footer h3{font-family: "Tinos", sans-serif;
         margin-top:50px;}
 .box2 p{margin-top:15px;}
 .box2 > img{width:100%;}
+
+
+
+
+/*====반응형====*/
+
+@media only screen and (max-width:1399px) and (min-width:950px){
+
+
+        .main_wrap h3{font-size:40px;}
+
+/*----section2(etron 설명)----*/
+
+        .ov_wrap{width:100%;}
+
+        .ov_img{width:90%;}
+
+        .ov_img div{height:500px;
+                background-size: cover;}
+
+        .ov_img video{width:100%;
+                height:500px;}
+
+/*----etron text----*/
+
+        .etron_txt{width:48%;}
+
+        .etron_txt h4{font-size: 28px;}
+
+        .etron_txt p{font-size: 18px;}
+
+        .info_txt{padding:70px 0;}
+
+        .info_txt > p{font-size:16px;}
+
+        .info_txt span{width:50%;
+                        font-size:14px;}
+
+        .etron_txt .middle_txt{font-size: 20px;
+                                margin:30px auto;}
+
+        .etron_fp{width:350px;}
+
+        .middle_img{height:255px;}
+
+
+        .middle_img img:nth-child(1){width:180px;
+                                        left:15px;}
+
+
+        .middle_img img:nth-child(2){width:150px;
+                                        top:100px;
+                                        right:90px;}
+
+/*----form----*/
+        .form_wrap{margin: 50px auto;}
+
+        .form_image{background-size: 130%;
+                        background-position-x: -200px;
+                        background-position-y: 40px;}
+
+        form{margin-right:20px;}
+
+/*----footer----*/
+
+        footer h3{font-size:45px;}
+
+}/*1399-950 구간 끝*/
+
+
+
+
+
+@media only screen and (max-width:949px) and (min-width:700px){
+
+/*----header & nav----*/    
+        
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:30%;
+                height:510px;}
+
+        nav > ul > li {font-size:24px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:200px;
+                height:510px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:180px;}
+
+/*---main----*/
+        .main_wrap h3{margin-top:30px;
+                        font-size:35px;}
+
+        .main_info{width:95%;
+                margin: 30px auto;
+                border:1px solid #dddddd;}
+
+        .main_info ul{width:100%;
+                        margin: 10px auto;
+                        display: block;
+                        text-align: center;}
+
+        .small_etron{width: 100%;
+                        margin: 20px auto;}
+
+        .small_etron img{width:80%;}
+
+        .car_detail li{padding-top:45px;
+                        font-size:18px;}
+
+        .car_detail li span{font-size: 20px;}
+
+
+/*----section2(etron 설명)----*/
+        .ov_wrap{display: block;
+                width:100%;
+                margin:0 auto;}
+
+        .scroll_wrap{width:100%;
+                height:300px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;}
+
+        /* .scroll_wrap::-webkit-scrollbar {display: none;} */
+
+        .ov_img{display: flex;
+                width:280%;
+                visibility: visible;}
+
+        .ov_img > div{width:120%;
+                        height: 300px;
+                        margin:5px;
+                        background-size: cover;
+                        background-position: center;}
+
+        .ov_img video{width:100%;
+                        height: 300px;
+                        padding-top:5px;}
+
+
+/*----etron text----*/
+
+        .etron_txt{width: 88%;
+                margin: 50px auto;}
+
+        .info_txt{padding:50px 0;
+                justify-content: space-between;}
+
+        .info_txt > p{font-size:16px;}
+
+        .info_txt span{width:50%;
+                        font-size:14px;}
+
+        .etron_txt .middle_txt{font-size: 20px;
+                                margin:30px auto;}
+
+        .etron_fp{width:350px;}
+
+        .middle_img{height:350px;}
+
+
+        .middle_img img:nth-child(1){width:280px;
+                                        left:80px;}
+
+
+        .middle_img img:nth-child(2){width:200px;
+                                        top:150px;
+                                        right:90px;}
+/*----form----*/
+        .form_wrap{margin: 50px auto;}
+
+        .form_wrap h3{text-align: center;}
+
+        .form_image{display: none;}
+
+        form{width:80%;
+                margin:0 auto;}
+
+        .btn{width: 100%;
+                margin: 5px auto;
+                text-align: end;}
+
+        .btn button{margin-top:0;}
+
+        .btn button:hover{background-color: #000000;
+                color:#ffffff;
+                transition: none;}
+/*----footer----*/
+
+       footer h3{font-size:40px;}
+
+       .box1 ul {width:70%;}
+
+       .box2 p{text-align: center;
+               font-size: 10px;} 
+
+}/*949-700구간 끝*/
+
+
+@media only screen and (max-width:699px){
+
+/*---header & nav----*/
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:50%;
+                height:500px;}
+
+        nav > ul > li {font-size:20px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:100%;
+                height:500px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:150px;}
+
+/*---main----*/
+        .main_wrap h3{margin-top:30px;
+                font-size:25px;}
+
+        .main{margin:30px auto;}        
+
+
+        .main_info{width:95%;
+                margin: 30px auto;
+                border:1px solid #dddddd;}
+
+        .main_info ul{width:100%;
+                        margin: 10px auto;
+                        display: block;
+                        text-align: center;}
+
+        .small_etron{width: 100%;
+                        margin: 20px auto;}
+
+        .small_etron img{width:80%;}
+
+        .car_detail li{padding-top:30px;
+                        line-height: 25px;
+                        font-size:16px;}
+
+        .car_detail li span{font-size: 18px;}
+
+/*----section2(etron 설명)----*/
+        .ov_wrap{display: block;
+                width:100%;
+                margin:0 auto;}
+
+        .scroll_wrap{width:100%;
+                height:300px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                -webkit-overflow-scrolling: touch;}
+
+        .scroll_wrap::-webkit-scrollbar {display: none;}
+
+        .ov_img{display: flex;
+                width:380%;
+                visibility: visible;}
+
+        .ov_img > div{width:120%;
+                        height: 300px;
+                        margin:5px;
+                        background-size: cover;
+                        background-position: center;}
+
+        .ov_img video{width:100%;
+                        height: 300px;
+                        padding-top:5px;}
+
+
+
+
+/*----etron text----*/
+
+        .etron_txt{width: 88%;
+                margin: 50px auto;}
+
+        .info_txt{padding:50px 0;
+                justify-content: space-between;}
+
+        .info_txt p{font-size:16px;}
+
+        .info_txt span{width:50%;
+                        font-size:14px;}
+
+        .etron_txt .middle_txt{font-size: 20px;
+                                margin:30px auto;}
+
+        .etron_fp{width:300px;}
+
+        .middle_img{height:320px;}
+
+        .middle_img img:nth-child(1){width:200px;
+                                        left:30px;}
+
+
+        .middle_img img:nth-child(2){width:180px;
+                                        top:100px;
+                                        right:20px;}
+/*----form----*/
+        .form_wrap{margin: 50px auto;}
+
+        .form_wrap h3{font-size: 24px;
+                line-height: 30px;
+                        text-align: center;}
+
+        .form_image{display: none;}
+
+        form{width:80%;
+                margin:0 auto;}
+
+        fieldset > div > input{margin:15px auto;}
+
+        select{margin:10px auto;}
+
+
+        .btn{width: 100%;
+                margin: 5px auto;
+                text-align: end;}
+
+        .btn button{width:180px;
+                height:40px;
+                margin:10px auto;
+                line-height: 40px;}
+
+        .btn button:hover{background-color: #000000;
+                color:#ffffff;
+                transition: none;}
+
+/*----footer----*/
+
+        footer{height:auto;
+                padding:20px;}
+
+        .footer_wrap{display:block ;}
+
+        footer h3{font-size:30px;
+                text-align: center;}
+
+        .box1 > ul {width:100%;
+                margin:0 auto;
+                margin-top:30px;}
+
+        .box1 > ul > li{font-size:16px;}
+
+        .ft_nav{font-size:12px;
+                margin-top:10px;
+                line-height: 20px;}
+
+        .box1{width: 100%;}
+
+        .box2{display: none;}
+
+}

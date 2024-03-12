@@ -103,9 +103,15 @@ nav > ul > li {position: relative;
 
 /*----main----*/
 
-.video_wrap{width:100%;
-                height:900px;
-                overflow: hidden;}
+.video_wrap {position: relative;
+                padding-bottom: 56.25%; /* 16:9 */
+                height: 0;}
+
+.video_wrap video {position: absolute;
+                top: 100px;
+                left: 0;
+                width: 100%;
+                height: 100%;}
 
 .video_wrap h3{width:100%;
                 margin:50px auto;
@@ -124,6 +130,7 @@ nav > ul > li {position: relative;
 
 .vh_slide{width:92%;
         margin: 0 auto;
+        padding-top:100px;
         overflow: hidden;
         visibility: hidden;}
 
@@ -190,8 +197,7 @@ nav > ul > li {position: relative;
         color:#ffffff;
         background-color: #1F2834;}
 
-.banner li{text-align: center;
-        font-size:18px;}
+.banner li{text-align: center;}
 
 .banner li p{font-size:16px;}
 
@@ -209,13 +215,15 @@ nav > ul > li {position: relative;
 
 .service_wrap ul{display: flex;
                 justify-content: space-between;
-                text-align: center}         
+                text-align: center} 
 
-.warrant_img{width:600px;
+.service_wrap ul li{width:42%;}
+
+.warrant_img{width:100%;
                 height:400px;
                 background-image: url("../images/image2/asimg.jpeg");}
 
-.carservice_img{width:600px;
+.carservice_img{width:100%;
                 height:400px;
                 background-image: url("../images/image2/carservice.png");
                 background-position-Y: -40px;
@@ -240,7 +248,7 @@ nav > ul > li {position: relative;
                         width:580px;
                         line-height: 22px;}
 
-/*----bottom 영상----*/
+/*----bottom----*/
 .bottom_main{width:100%;
                 height:500px;
                 background-position: center;
@@ -293,3 +301,338 @@ footer h3{font-family: "Tinos", sans-serif;
         margin-top:50px;}
 .box2 p{margin-top:15px;}
 .box2 > img{width:100%;}
+
+
+
+/*====반응형====*/
+
+@media only screen and (max-width:1399px) and (min-width:950px){
+     
+        .video_wrap h3{font-size: 48px;
+                        margin:30px auto;}
+
+/*----slide----*/
+
+        .vh_slide ul li{height:380px;}
+
+        .slide_img{width:250px;
+                height:145px;
+                margin: 30px auto;}
+
+        .vh_slide ul li h3{margin:10px auto;}
+
+        .txt{height:80px;}
+
+        .show_btn{width:180px;
+                height:40px;
+                margin:20px auto;
+                line-height: 40px;}
+
+/*----banner----*/
+
+
+        .banner{height:200px;
+                margin: 30px auto;}
+
+        .banner li img{width:70px;}  
+                        
+                        
+/*----service----*/
+
+        .service_wrap{width:94%;}
+
+        .service_wrap ul li{width:47%;}
+
+        .warrant_img{height:350px;
+                        background-position-x: -100px;}
+        .carservice_img{height:350px;
+                        background-position-y: 0;}
+
+        .service_wrap ul li p,
+        .service_wrap ul li span{width:400px;}
+
+
+/*----bottom----*/
+
+        .vh_bottom p{margin:60px 50px;}      
+
+/*----footer----*/
+
+        footer h3{font-size:40px;}
+
+        .box1 ul {width:70%;}
+
+        .box2 p{text-align: center;
+                font-size: 10px;}
+
+}/*1399-950구간 끝*/
+
+
+@media only screen and (max-width:949px) and (min-width:700px){
+
+/*----header & nav----*/    
+    
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:30%;
+                height:510px;}
+
+        nav > ul > li {font-size:24px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:200px;
+                height:510px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:180px;}
+
+/*----main----*/
+
+        .video_wrap h3{font-size: 45px;
+                        margin:20px auto;}
+
+
+/*----slide----*/
+
+        .vh_slide h3{margin:30px auto;
+                        padding-left: 2%;
+                        font-size:28px;}
+
+        .vh_slide ul li{height:310px;}
+
+        .slide_img{width:180px;
+                height:90px;
+                margin: 0 auto;
+                margin-top:30px;}
+
+        .vh_slide ul li h3{margin:15px auto;
+                        font-size: 18px;}
+
+        .txt{height:100px;}
+
+        .txt p{font-size: 14px;}
+
+        .show_btn{width:160px;
+                height:35px;
+                margin:20px auto;
+                line-height: 35px;
+                font-size: 14px;}
+
+
+
+/*----banner----*/
+
+
+        .banner{height:180px;
+                margin: 30px auto;}
+
+        .banner li img{width:50px;}  
+
+
+/*----service----*/
+
+        .service_wrap{width:100%;
+                        margin:50px auto;}
+
+        .service_wrap ul{display: block;
+                margin: 0 auto;}
+
+        .service_wrap ul li{width:100%;
+                                margin: 40px auto;}
+
+        .warrant_img{height:350px;
+                        background-position-x: -100px;}
+        
+        .carservice_img{height:350px;
+                        background-position-y: -30px;}
+
+        .service_wrap ul li p,
+        .service_wrap ul li span{width:80%;}
+                        
+/*----bottom----*/
+
+
+.bottom_main{height:400px;
+                background-position-x: -700px;}
+
+        .vh_bottom p{width:90%;
+                        margin: 40px auto;}         
+
+
+/*----footer----*/
+
+        footer h3{font-size:40px;}
+
+        .box1 ul {width:70%;}
+
+        .box2 p{text-align: center;
+                font-size: 10px;}
+
+
+
+}/*949-700구간 끝*/
+
+
+
+@media only screen and (max-width:699px){
+
+/*---header & nav----*/
+        .logo{height:70px;
+                float: right;
+                margin-top:-5px;}
+
+        .logo img{height:70%;
+                padding:10px;}
+
+        nav{width:50%;
+                height:500px;}
+
+        nav > ul > li {font-size:20px;}
+
+        .car_img{position:absolute;
+                top:0;
+                left:100%;
+                width:100%;
+                height:500px;
+                padding-top:20px;
+                background-color: #dddddd;}
+
+        .car_img img{width:150px;}
+
+
+/*----main----*/
+
+        .video_wrap h3{font-size:35px;
+                        margin:12px auto;}            
+
+        .video_wrap video {top: 70px;}
+
+
+/*----slide----*/
+
+        .vh_slide h3{margin:20px auto;
+                padding-left:0;
+                text-align: center;
+                font-size:24px;}
+
+        .vh_slide{width:100%;
+                padding-top:80px;
+                visibility: visible;
+                animation: none;}
+
+
+        .vh_slide ul{width:600%;}
+
+        .vh_slide ul li{width:calc(100% / 6);
+                        height:300px;
+                        margin:0;}
+
+        .slide_img{width:200px;
+                height:90px;
+                margin: 0 auto;
+                margin-top:30px;}
+
+
+        .vh_slide ul li h3{margin:15px auto;
+                        font-size: 18px;}
+
+        .txt{height:80px;}
+
+        .txt p{font-size: 14px;}
+
+        .show_btn{width:160px;
+                height:35px;
+                margin:20px auto;
+                line-height: 35px;
+                font-size: 14px;}
+
+        .show_btn:hover{background-color: #000000;
+                color:#ffffff;
+                transition: none;}
+
+        .slide_btn{justify-content: center;}
+        
+        .slide_btn img{width:15px;
+                        height:15px;
+                        margin: 0 10px;
+                        cursor: pointer;}
+
+
+/*----banner----*/
+        .banner{height:180px;
+                margin: 0 auto;}
+
+        .banner li p{width:70px;
+                        font-size:12px;}        
+
+        .banner li img{width:50px;}  
+
+/*----service----*/
+
+        .service_wrap{width:100%;
+                        margin:50px auto;}
+
+        .service_wrap ul{display: block;
+                        margin: 0 auto;}
+
+        .service_wrap ul li{width:100%;
+                        margin: 40px auto;}
+
+        .warrant_img{height:300px;
+                        background-position-x: -120px;}
+        .carservice_img{height:300px;
+                        background-position-y: -20px;}
+
+        .service_wrap ul li h3{font-size: 24px;}
+
+        .service_wrap ul li p{width:80%;
+                                margin:15px auto;
+                                line-height: 20px;}
+                                
+        .service_wrap ul li span{width:80%;
+                                margin-top:0;
+                                line-height: 18px;
+                                font-size:14px;}
+        
+/*----bottom----*/
+        .bottom_main{height:400px;
+                        background-position: -750px -130px;}
+
+        .vh_bottom p{width:98%;
+                        margin: 40px auto;
+                        text-align: center;
+                        font-size: 16px;}  
+
+
+/*----footer----*/
+
+        footer{height:auto;
+                padding:20px;}
+
+        .footer_wrap{display:block ;}
+
+        footer h3{font-size:30px;
+                text-align: center;}
+
+        .box1 > ul {width:100%;
+                margin:0 auto;
+                margin-top:30px;}
+
+        .box1 > ul > li{font-size:16px;}
+
+        .ft_nav{font-size:12px;
+                margin-top:10px;
+                line-height: 20px;}
+        
+        .box1{width: 100%;}
+
+        .box2{display: none;}
+}

@@ -14,8 +14,6 @@ body{background-color: #ffffff;
 a{text-decoration: none;
     color:inherit;}
 
-.clearfix::after{display: block; content: ""; clear: both;}
-
 
 .wrap{width:100%;}
 
@@ -161,11 +159,6 @@ nav > ul > li {position: relative;
 
 .news div span{font-size:14px;}
 
-
-
-
-
-
 /*----footer----*/
 
 footer{width:100%;
@@ -206,3 +199,201 @@ footer h3{font-family: "Tinos", sans-serif;
 margin-top:50px;}
 .box2 p{margin-top:15px;}
 .box2 > img{width:100%;}
+
+
+
+/*====반응형====*/
+
+@media only screen and (max-width:1399px) and (min-width:950px){
+
+    .title_wrap h3{font-size:40px;}
+
+/*----media content----*/
+
+    .media_wrap h4{font-size:24px;}
+
+    .icons{margin-top: 170px;}
+
+    .icons div{padding:0 5px;}
+
+    .icons p{font-size: 14px;}
+
+    .icons img{width:30px;}
+
+    .news div{margin-right: 18px;}
+
+    .news img{height:250px;}
+
+/*----footer----*/
+    footer h3{font-size:45px;}
+
+
+}/*1399-950구간 끝*/
+
+
+@media only screen and (max-width:949px) and (min-width:700px){
+/*----header & nav----*/    
+    
+    .logo{height:70px;
+        float: right;
+        margin-top:-5px;}
+
+    .logo img{height:70%;
+            padding:10px;}
+
+    nav{width:30%;
+            height:510px;}
+
+    nav > ul > li {font-size:24px;}
+
+    .car_img{position:absolute;
+            top:0;
+            left:100%;
+            width:200px;
+            height:510px;
+            padding-top:20px;
+            background-color: #dddddd;}
+
+    .car_img img{width:180px;}
+
+
+    .title_wrap h3{margin-top:30px;
+                font-size:38px;}
+    .title_wrap p{font-size:16px;}
+
+/*----media content----*/
+
+    .media_wrap{display: block;}
+
+    .media_wrap h4{font-size: 28px;}
+
+    .media_wrap > div:nth-child(1){width:100%;}
+
+    .icons{margin:25px auto;
+            justify-content: center;}
+
+    .icons div{padding:0 10px;}
+
+    .icons p{font-size: 14px;}
+
+    .icons img{width:25px;}
+
+    .news_wrap{width:100%;
+                margin: 80px auto;}
+
+    .news{width:100%;
+        margin:0 auto;}    
+
+    .news div{margin:0 8px;}
+
+    .news img{height:250px;}
+
+    .news span{display: block;
+                text-align: justify;}
+
+/*----footer----*/
+
+    footer h3{font-size:40px;}
+
+    .box1 ul {width:70%;}
+
+    .box2 p{text-align: center;
+            font-size: 10px;}
+
+}/*949-700구간 끝*/
+
+
+
+@media only screen and (max-width:699px){
+
+/*---header & nav----*/
+    .logo{height:70px;
+            float: right;
+            margin-top:-5px;}
+
+    .logo img{height:70%;
+            padding:10px;}
+
+    nav{width:50%;
+            height:500px;}
+
+    nav > ul > li {font-size:20px;}
+
+    .car_img{position:absolute;
+            top:0;
+            left:100%;
+            width:100%;
+            height:500px;
+            padding-top:20px;
+            background-color: #dddddd;}
+
+    .car_img img{width:150px;}
+
+    .title_wrap h3{margin-top:30px;
+                    font-size:28px;}
+
+    .title_wrap p{margin:10px 0;
+                font-size:14px;}
+
+/*----media content----*/
+
+    .media_wrap{display: block;}
+
+    .media_wrap h4{margin-top:20px;
+                    font-size: 24px;}
+
+    .media_wrap p{font-size: 14px;
+                    margin:0 auto;}
+
+    .media_wrap > div:nth-child(1){width:100%;}
+
+    .icons{margin:15px auto;
+            justify-content: center;}
+
+    .icons div{padding:0 10px;}
+
+    .icons p{font-size: 14px;}
+
+    .icons img{width:25px;}
+
+    .news_wrap{width:100%;
+        margin: 50px auto;}
+
+    .news{width:98%;
+        margin:0 auto;}    
+
+    .news div{margin:0 auto;}
+
+    .news img{height:300px;}
+
+    .news span{display: block;
+                width:98%;
+                margin: 10px auto;
+                text-align: justify;}
+
+
+/*----footer----*/
+
+    footer{height:auto;
+        padding:20px;}
+
+    .footer_wrap{display:block ;}
+
+    footer h3{font-size:30px;
+        text-align: center;}
+
+    .box1 > ul {width:100%;
+        margin:0 auto;
+        margin-top:30px;}
+
+    .box1 > ul > li{font-size:16px;}
+
+    .ft_nav{font-size:12px;
+        margin-top:10px;
+        line-height: 20px;}
+
+    .box1{width: 100%;}
+
+    .box2{display: none;}
+}    
+
