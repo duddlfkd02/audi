@@ -4,8 +4,8 @@ $(document).ready(function(){
         $('nav').toggle();
     })
 
-    var height = $(window).scrollTop();
-    console.log(height);
+    // var height = $(window).scrollTop();
+    // console.log(height);
 
 
 /*======애니메이션 스크롤 구간 설정======*/
@@ -53,22 +53,6 @@ $(document).ready(function(){
 
     if(window_W <= 950 && window_W > 700){//태블릿
         $(document).on("scroll",function(){
-            if($(document).scrollTop() > 222){
-                $('.ov_img1').addClass("animate__fadeInUp");
-                $('.ov_img1').css({"visibility":"visible"});
-            }
-            if($(document).scrollTop() > 846){
-                $('.ov_img2').addClass("animate__fadeInUp");
-                $('.ov_img2').css({"visibility":"visible"});
-            }
-            if($(document).scrollTop() > 1170){
-                $('.ov_img3').addClass("animate__fadeInUp");
-                $('.ov_img3').css({"visibility":"visible"});
-            }
-            if($(document).scrollTop() > 1603){
-                $('.ov_img4').addClass("animate__fadeInUp");
-                $('.ov_img4').css({"visibility":"visible"});
-            }
             if($(document).scrollTop() > 2060){
                 $('.form_image').addClass("animate__slideInLeft");
                 $('.form_image').css({"visibility":"visible"});

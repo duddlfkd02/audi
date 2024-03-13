@@ -5,8 +5,8 @@ $(document).ready(function(){
         $('nav').toggle();
     })
     
-    var height = $(window).scrollTop();
-    console.log(height);
+    // var height = $(window).scrollTop();
+    // console.log(height);
 
 
 /*======애니메이션 스크롤 구간 설정======*/
